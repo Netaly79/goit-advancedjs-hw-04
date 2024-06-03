@@ -7,23 +7,25 @@
     <title>Пошук зображень</title>
     
     <script type="module" crossorigin src="/goit-advancedjs-hw-04/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-04/assets/vendor-ae6d56ab.js">
-    <link rel="stylesheet" href="/goit-advancedjs-hw-04/assets/vendor-e5212ee8.css">
-    <link rel="stylesheet" href="/goit-advancedjs-hw-04/assets/index-ed32379b.css">
+    <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-04/assets/vendor-b0d10f48.js">
+    <link rel="stylesheet" href="/goit-advancedjs-hw-04/assets/vendor-1cd1f9d9.css">
+    <link rel="stylesheet" href="/goit-advancedjs-hw-04/assets/index-7c4a722f.css">
   </head>
   <body>
     <div class="container">
       <form class="search-form" id="search-form">
         <input
-        type="text"
-        name="searchQuery"
-        autocomplete="off"
-        placeholder="Search images..."
+          class="search-input"
+          type="text"
+          name="searchQuery"
+          autocomplete="off"
+          placeholder="Search images..."
         />
         <button type="submit">Search</button>
-        </form>
+      </form>
+      <div class="gallery"></div>
+      <button type="button" class="load-more">Load more</button>
     </div>
-    
 
     
   </body>
