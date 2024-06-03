@@ -19,6 +19,7 @@
     "express": "^4.19.2",
     "izitoast": "^1.4.0",
     "request": "^2.88.2",
+    "simplelightbox": "^2.14.3",
     "vite-plugin-full-reload": "^1.0.5",
     "vite-plugin-html-inject": "^1.0.1"
   }
