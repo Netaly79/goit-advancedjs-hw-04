@@ -31,15 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
     await requestImages(searchQuery, img_on_page, page)
-      .catch(error => {
-        showToast(
-          'error',
-          'Error',
-          'Something went wrong. Please try again later.'
-        );
-      })
       .then(response => {
-        const images = response.data.hits;
+        const images = response.data?.hits;
         maximum = response.data.totalHits;
 
         if (images.length === 0) {
@@ -72,6 +65,13 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!canScroll) {
           more.style.display = 'none';
         }
+      })
+      .catch(error => {
+        showToast(
+          'error',
+          'Error',
+          'Something went wrong. Please try again later.'
+        );
       });
   });
 
