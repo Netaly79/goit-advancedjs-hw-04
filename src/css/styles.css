@@ -77,6 +77,7 @@ button[type='submit']:hover,
 
 .image-card {
   width: 22%;
+  border: 1px dotted #ccc;
 }
 
 .image {
@@ -89,6 +90,7 @@ button[type='submit']:hover,
 .image-attributes {
   display: flex;
   justify-content: space-between;
+  padding: 10px 5px;
 }
 
 .item {

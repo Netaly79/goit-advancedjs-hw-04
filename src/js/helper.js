@@ -25,8 +25,8 @@ export function showToast(type, header, message, position = 'topLeft') {
   }
 }
 
-export function checkNextPage(maximum, length, count) {
-  if (maximum < length + count) {
+export function checkNextPage(maximum, length) {
+  if (maximum <= length) {
     showToast(
       'info',
       'Limit',

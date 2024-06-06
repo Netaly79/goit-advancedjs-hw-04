@@ -19,7 +19,7 @@ export async function requestImages(searchQuery, img_on_page, page) {
       },
     });
 
-    return response;
+    return response.data;
   } catch (error) {
     return error;
   }
